@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title></title>
+</head>
+<body>
+	<form method = "POST" action="/comments/<%=comment.id%>?_method=PATCH">
+		<section>
+            <label for="comment">Comment Text</label>
+            <br>
+            <textarea id="comment" cols="30" rows="5" name="comment"><%= comment.comment %></textarea>
+        </section>
+        <button>Submit</button>
+    </form>
+</body>
+</html>
